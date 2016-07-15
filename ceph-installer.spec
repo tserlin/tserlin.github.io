@@ -1,16 +1,10 @@
-%global commitdate 20160713
-%global commit 4341b4c4f372a3d2f22991743af7df645ffe6542
-%global shortcommit %(c=%{commit}; echo ${c:0:7})
-
-%define srcname ceph-installer
-
 Name:           ceph-installer
 Version:        1.0.14
 Release:        1%{?dist}
 Summary:        A service to provision Ceph clusters
 License:        MIT
 URL:            https://github.com/ceph/ceph-installer
-Source0:        https://github.com/ceph/%{srcname}/archive/%{commit}.tar.gz
+Source0:        https://github.com/ceph/ceph-installer/archive/4341b4c4f372a3d2f22991743af7df645ffe6542.tar.gz
 
 BuildArch:      noarch
 
@@ -45,7 +39,7 @@ BuildRequires: python-sqlalchemy
 An HTTP API to provision and control the deployment process of Ceph clusters.
 
 %prep
-%autosetup -p1 -n %{srcname}-%{commit}
+%autosetup -p1 -n %{name}-4341b4c4f372a3d2f22991743af7df645ffe6542
 
 %build
 %{__python} setup.py build
