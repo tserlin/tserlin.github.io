@@ -4,7 +4,7 @@ Release:        1%{?dist}
 Summary:        A service to provision Ceph clusters
 License:        MIT
 URL:            https://github.com/ceph/ceph-installer
-Source0:        https://github.com/ceph/ceph-installer/archive/4341b4c4f372a3d2f22991743af7df645ffe6542.tar.gz
+Source0:	https://github.com/ceph/%{name}/archive/v%{version}/%{name}-v%{version}.tar.gz
 
 BuildArch:      noarch
 
